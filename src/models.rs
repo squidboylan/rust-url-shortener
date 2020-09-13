@@ -8,7 +8,7 @@ pub struct Link {
 }
 
 #[derive(Clone, Insertable, Serialize, Deserialize)]
-#[table_name="links"]
+#[table_name = "links"]
 pub struct LinkCreate {
     pub dest_url: String,
 }
