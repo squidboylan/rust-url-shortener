@@ -15,4 +15,6 @@ http = "0.2"
 serde = "*"
 serde_derive = "*"
 serde_json = "*"
+tokio = { version = "0.2", features = ["sync"] }
 tokio-diesel = "0.3"
+lru = "0.6"

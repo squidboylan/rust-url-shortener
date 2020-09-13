@@ -1,13 +1,13 @@
 use super::schema::links;
 
-#[derive(Queryable, Serialize, Deserialize)]
+#[derive(Clone, Default, Debug, Queryable, Serialize, Deserialize)]
 pub struct Link {
     pub id: String,
     pub dest_url: String,
     pub count: i32,
 }
 
-#[derive(Insertable, Serialize, Deserialize)]
+#[derive(Clone, Insertable, Serialize, Deserialize)]
 #[table_name="links"]
 pub struct LinkCreate {
     pub dest_url: String,
